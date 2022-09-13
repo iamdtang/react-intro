@@ -12,6 +12,10 @@ export default function SelectCoin() {
     });
   }
 
+  // Start by having an empty dependency array and we'll see that
+  // the coin is updating but not the price. Adding "coin" to the
+  // dependency array will cause useEffect to run if "coin" changes
+  // between renders.
   useEffect(() => {
     fetchPrice(coin).then((data) => {
       setUsd(data.USD);

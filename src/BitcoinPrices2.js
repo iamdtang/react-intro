@@ -6,6 +6,7 @@ export default function BitcoinPrices2() {
   const [eurPrice, setEurPrice] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
+  // Same example as the last one but with a loading indicator
   useEffect(() => {
     fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
       .then((response) => {

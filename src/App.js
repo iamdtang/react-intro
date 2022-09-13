@@ -38,14 +38,14 @@ function App() {
       </div>
       <div>
         <h2>
-          4. Bitcoin Prices - useEffect without a Dependency Array but not
+          4. Bitcoin Prices 1 - useEffect without a Dependency Array but not
           causing an Infinite Loop
         </h2>
         <BitcoinPrices1 />
       </div>
       <div>
         <h2>
-          5. Bitcoin Prices - useEffect with an Empty Dependency Array and a
+          5. Bitcoin Prices 2 - useEffect with an Empty Dependency Array and a
           Loading Indicator
         </h2>
         <BitcoinPrices2 />
