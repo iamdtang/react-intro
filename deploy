@@ -1,0 +1,5 @@
+npm run build
+cd build
+mv index.html 200.html
+surge --domain itp404-react-intro.surge.sh
+cd ..
