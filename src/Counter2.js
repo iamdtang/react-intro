@@ -8,6 +8,7 @@ export default function Counter2() {
   // The function passed to useEffect is called an "effect", that is,
   // some operation with a side effect.
   useEffect(() => {
+    document.title = `Count: ${count}`;
     console.log(document.getElementById("count-text").innerHTML);
   });
 
