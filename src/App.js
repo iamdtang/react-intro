@@ -13,11 +13,12 @@ function App() {
       <h1>React Examples</h1>
       <div>
         <a
-          href="https://itp404-react-intro.surge.sh/"
+          href="http://itp404-react-intro.surge.sh/"
           target="_blank"
           rel="noreferrer"
         >
-          https://itp404-react-intro.surge.sh
+          http://itp404-react-intro.surge.sh (intentionally using HTTP and not
+          HTTPS)
         </a>
       </div>
       <div>
