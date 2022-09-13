@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Loading from "./Loading";
 
 export default function BitcoinPrices() {
@@ -6,17 +6,16 @@ export default function BitcoinPrices() {
   const [eurPrice, setEurPrice] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setUsdPrice(data.bpi.USD.rate);
-        setEurPrice(data.bpi.EUR.rate);
-        setIsLoading(false);
-      });
-  }, []);
+  console.log("API called"); // runs many times
+  fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      setUsdPrice(data.bpi.USD.rate);
+      setEurPrice(data.bpi.EUR.rate);
+      setIsLoading(false);
+    });
 
   return isLoading ? (
     <Loading />

@@ -30,18 +30,18 @@ function App() {
       </div>
       <div>
         <h2>3. Coordinates - useEffect with an Empty Dependency Array</h2>
-        <Coordinates />
+        {/* <Coordinates /> */}
       </div>
       <div>
         <h2>
           4. Bitcoin Prices - useEffect with an Empty Dependency Array and a
           Loading Indicator
         </h2>
-        <BitcoinPrices />
+        {/* <BitcoinPrices /> */}
       </div>
       <div>
         <h2>5. Select a Coin - useEffect with a Dependency Array</h2>
-        <SelectCoin />
+        {/* <SelectCoin /> */}
       </div>
     </div>
   );

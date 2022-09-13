@@ -12,11 +12,12 @@ export default function SelectCoin() {
     });
   }
 
+  // Coin is updating but not the price
   useEffect(() => {
     fetchPrice(coin).then((data) => {
       setUsd(data.USD);
     });
-  }, [coin]);
+  }, []);
 
   return (
     <div>
